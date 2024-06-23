@@ -2,9 +2,9 @@
 
 USERID=$(id -u)
 
-if [ $USERID -lt 0 ]
+if [ $USERID -ne 0 ]
 then 
-    echo "please turn on the root user for software"
+    echo "you are not in root user"
 else
     echo "you are in root user"
 fi
